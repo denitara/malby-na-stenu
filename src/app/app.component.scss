@@ -1,0 +1,62 @@
+@font-face {
+    font-family: logoFont;
+    src: url("../assets/fonts/Parisienne-Regular.ttf");
+}
+
+h1 {
+    font-family: logoFont;
+    font-size: 200%;
+}
+
+h2 {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 150%; 
+}
+
+.home {
+    background-color: lavender;
+    background-image: url("../assets/img/index_bg.png");
+    background-size: cover;
+    height: 100%;
+}
+
+.logo {
+    height: 60%;
+    text-align: center;
+    padding-top: 10%;
+    .col {
+        height: 100%;
+    }
+    img {
+        max-height: 100%;
+        max-width: 80%;
+    }
+}
+
+.author-title {
+    height: 40%;
+    padding-top: 3%;
+    text-align: right;
+    padding-right: 5%;
+}
+
+@media (orientation: portrait) {
+    .author-title {
+        padding-top: 10%;
+        text-align: center;
+        padding-right: auto;
+    }
+
+    .logo {
+        padding-top: 20%;
+    }
+}
+
+@media (min-width: 768px), (min-height: 768px) {
+    h1 {
+        font-size: 350%;
+    }
+    h2 {
+        font-size: 200%;
+    }
+}
