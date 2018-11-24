@@ -1,62 +1,42 @@
-@font-face {
-    font-family: logoFont;
-    src: url("../assets/fonts/Parisienne-Regular.ttf");
+@import '../styles';
+
+img {
+    height: 256px;
 }
 
-h1 {
-    font-family: logoFont;
-    font-size: 200%;
-}
-
-h2 {
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    font-size: 150%; 
-}
-
-.home {
-    background-color: lavender;
+header.home {
+    padding-top: calc(6rem + 72px);
+    padding-bottom: calc(6rem + 80px);
     background-image: url("../assets/img/index_bg.png");
     background-size: cover;
-    height: 100%;
+}
+  
+header.home h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: logoFont;
+    padding-bottom: 2rem;
+}
+  
+header.home h2 {
+    font-size: 1.75rem;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
-.logo {
-    height: 60%;
-    text-align: center;
-    padding-top: 10%;
-    .col {
-        height: 100%;
-    }
-    img {
-        max-height: 100%;
-        max-width: 80%;
-    }
+menu {
+    margin-top: -20px;
 }
 
-.author-title {
-    height: 40%;
-    padding-top: 3%;
-    text-align: right;
-    padding-right: 5%;
-}
-
-@media (orientation: portrait) {
-    .author-title {
-        padding-top: 10%;
-        text-align: center;
-        padding-right: auto;
+@media (min-width: 992px) {
+    header.home {
+        padding-top: calc(6rem + 106px);
+        padding-bottom: calc(6rem + 7px);
     }
-
-    .logo {
-        padding-top: 20%;
+    header.home h1 {
+        font-size: 4.75em;
+        line-height: 4rem;
     }
-}
-
-@media (min-width: 768px), (min-height: 768px) {
-    h1 {
-        font-size: 350%;
-    }
-    h2 {
-        font-size: 200%;
+    header.home h2 {
+        font-size: 3em;
     }
 }

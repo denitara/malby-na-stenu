@@ -1,0 +1,78 @@
+@import '../../styles.scss';
+
+$dark-grey: #2d2d30;
+$light-grey: #d5d5d5;
+
+img {
+    margin-top: -7px;
+    width: 40px;
+}
+
+.title {
+    font-family: logoFont;
+}
+
+#mainNav {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; 
+    background-color: $dark-grey;
+	opacity: 0.9;
+}
+  
+#mainNav .navbar-brand {
+    color: white;
+}
+  
+#mainNav .navbar-nav {
+    margin-top: 1rem;
+    letter-spacing: 0.25rem;
+}
+  
+#mainNav .navbar-nav li.nav-item a.nav-link {
+    color: $light-grey;
+}
+  
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: white;
+}
+  
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+    color: white;
+}
+  
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    color: white;
+    text-decoration: underline;
+}
+  
+#mainNav .navbar-toggler {
+    font-size: 80%;
+    padding: 0.8rem;
+    background-color: dimgray;
+    color: white;
+
+    &:active, &:focus {
+        border-color: white;
+    }
+}
+  
+@media (min-width: 992px) {
+    #mainNav {
+        -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+        transition: padding-top 0.3s, padding-bottom 0.3s;
+    }
+    #mainNav .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: font-size 0.3s;
+        transition: font-size 0.3s;
+    }
+    #mainNav .navbar-nav {
+        margin-top: 0;
+    }
+    #mainNav.navbar-shrink {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}

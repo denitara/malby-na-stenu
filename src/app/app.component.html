@@ -1,19 +1,10 @@
-<div class="container-fluid home">
-  <div class="row logo">
-    <div class="col">
-      <img class="img-responsive" alt="Logo paleta" src="../assets/img/index_logo.png"/>
-    </div>
+<!-- Navigation -->
+<menu [title]=title></menu>
+<!-- Header -->
+<header class="home text-center">
+  <div class="container">
+    <img class="img-fluid mb-5 d-block mx-auto" src="../assets/img/index_logo.png" alt="Logo paleta">
+    <h1 class="mb-0">{{ title }}</h1>
+    <h2 class="text-uppercase mb-0">{{ author }}</h2>
   </div>
-  <div class="container author-title">
-      <div class="row">
-          <div class="col">
-              <h1>{{ title }}</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h2 class="text-uppercase">{{ author }}</h2>
-          </div>
-        </div>
-  </div>
-</div>
+</header>

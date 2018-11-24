@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+        <a class="title navbar-brand js-scroll-trigger" href="#index">
+            <img src="../../assets/img/logo-nav.png" alt="Logo">
+            {{ title }}
+        </a>
+      <button class="navbar-toggler navbar-toggler-right text-white rounded" 
+              type="button" data-toggle="collapse" data-target="#navbarResponsive"
+              aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse text-uppercase" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li *ngFor="let item of menuItems" class="nav-item mx-0 mx-lg-1">
+                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" [href]="item.link">
+                    {{ item.name }}
+                </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- 
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand logo img" href="../index.html"><img src="../images/logo-nav.png" alt="Logo"></a>
+            <a class="navbar-brand logo title" href="../index.html">Malby na stěnu</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="o_mne.html">O MNĚ</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="galerie.html">GALERIE
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/obsah/malby_na_stenu.html">Malby na stěnu</a></li>
+                        <li><a href="/obsah/olejomalby_akryl.html">Olejomalby a akryl</a></li>
+                        <li><a href="/obsah/ostatni.html">Ostatní práce</a></li>
+                    </ul>
+                </li>
+                <li><a href="vystavy.html">VÝSTAVY</a></li>
+                <li><a href="cenik.html">CENÍK</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>        -->
